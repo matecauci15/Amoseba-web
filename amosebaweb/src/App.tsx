@@ -66,7 +66,7 @@ const App = () => {
       {/* <ScrollTransition /> */}
       <div className="flex-grow">
         <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/Amoseba-web" element={<HomePage />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/benefits" element={<Benefits />} />

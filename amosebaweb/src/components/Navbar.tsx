@@ -244,7 +244,7 @@ export const Navbar: React.FC = () => {
       <header className="w-full md:w-[85%] max-h-20 h-[80px] md:h-[100px] bg-white rounded-full shadow-lg flex items-center justify-between px-6 md:px-8 z-10 relative">
         {/* Logo */}
         <div className="flex items-center w-40 md:w-64 ml-4 md:ml-20">
-          <Link to="/">
+          <Link to="/Amoseba-web">
             <img
               src={amosebalogo}
               alt="Logo"
