@@ -50,7 +50,7 @@ export const Cards: React.FC = () => {
   return (
     <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-12 sm:gap-12 p-6 sm:p-12 lg:p-24">
       {/* Card 1 */}
-      <div className="w-full sm:w-[48%] lg:w-[28%] relative rounded-3xl shadow-md overflow-hidden bg-gray-00">
+      <div className="w-full sm:w-[48%] lg:w-[28%] relative rounded-3xl shadow-md overflow-hidden bg-gray-200">
         <img
           src={card1}
           alt="Card 1"
@@ -82,7 +82,7 @@ export const Cards: React.FC = () => {
           className="w-full h-48 sm:h-56 object-cover rounded-lg"
         />
         <h1 className="absolute bottom-4 left-4 text-gray-600 text-xl sm:text-2xl md:text-3xl font-extrabold">
-          SUBSIDIOS
+          BENEFICIOS
         </h1>
         {/* Botón Redondo */}
         <button className="absolute bottom-4 right-4 bg-[#EEA987] text-white rounded-full p-3 shadow-lg hover:bg-[#ff8548] transition duration-300">
@@ -107,7 +107,7 @@ export const Cards: React.FC = () => {
           className="w-full h-48 sm:h-56 object-cover rounded-lg"
         />
         <h1 className="absolute bottom-4 left-4 text-gray-600 text-xl sm:text-2xl md:text-3xl font-extrabold">
-          SUBSIDIOS
+          SERVICIOS
         </h1>
         {/* Botón Redondo */}
         <button className="absolute bottom-4 right-4 bg-[#EEA987] text-white rounded-full p-3 shadow-lg hover:bg-[#ff8548] transition duration-300">

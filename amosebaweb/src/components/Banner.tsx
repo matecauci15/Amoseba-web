@@ -41,7 +41,7 @@ import { pesos } from "../assets";
 
 const Banner: React.FC = () => {
   return (
-    <div className="relative w-full flex flex-col md:flex-row items-center justify-around text-center overflow-hidden pt-8 md:pt-0 mb-16">
+    <div className="relative w-full flex flex-col md:flex-row items-center justify-around text-center overflow-hidden pt-8 md:pt-0 mb-16 bg-[#CAC792]">
       {/* Image container with fade-in and float animation */}
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
@@ -115,7 +115,7 @@ const Banner: React.FC = () => {
       </motion.div>
 
       {/* Gradient Overlay */}
-      {/* <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-transparent to-white"></div> */}
+      <div className="absolute bottom-0 left-0 w-full h-28 bg-gradient-to-b from-transparent to-white"></div>
     </div>
   );
 };
