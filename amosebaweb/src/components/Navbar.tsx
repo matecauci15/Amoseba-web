@@ -10,7 +10,7 @@ export const Navbar: React.FC = () => {
   const menuRef = useRef<HTMLDivElement>(null);
 
   const navItems: { name: string; href: string }[] = [
-    { name: "Nosotros", href: "/Amoseba-web/home" },
+    { name: "Nosotros", href: "/Amoseba-web/about" },
     { name: "Beneficios", href: "/Amoseba-web/benefits" },
     { name: "Subsidios", href: "/Amoseba-web/subsidios" },
     { name: "Servicios", href: "/Amoseba-web/services" },
@@ -68,11 +68,16 @@ export const Navbar: React.FC = () => {
         <nav className="hidden md:flex">
           <ul className="flex space-x-4 lg:space-x-6">
             {navItems.slice(0, -1).map((item) => (
-              <li key={item.name}>
-                <div className="bg-[#E8A598]/70 rounded-2xl px-4 py-2 hover:bg-[#E8A598]/90 transition-colors duration-200">
-                  <NavLink href={item.href}>{item.name}</NavLink>
-                </div>
-              </li>
+             <li key={item.name}>
+             <Link
+               to={item.href}
+               className={`text-white w-full h-7 bg-[#E8A598]/70 rounded-xl px-3 py-1.5 hover:bg-[#E8A598]/90 transition-colors duration-200 flex items-center justify-center ${
+                 location.pathname === item.href ? "font-bold" : ""
+               }`}
+             >
+               {item.name}
+             </Link>
+           </li>
             ))}
           </ul>
         </nav>
@@ -109,7 +114,7 @@ export const Navbar: React.FC = () => {
       {isMenuOpen && (
         <nav
           ref={menuRef}
-          className="w-11/12 md:hidden mt-4 bg-white rounded-3xl shadow-lg p-4 absolute top-[90px] z-50 left-1/2 transform -translate-x-1/2"
+          className="w-11/12 md:hidden mt-7 bg-white rounded-3xl text-center shadow-lg p-6 absolute top-[90px] z-50 left-1/2 transform -translate-x-1/2"
         >
           <ul className="space-y-3">
             {navItems.map((item) => (

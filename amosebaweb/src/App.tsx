@@ -2,7 +2,7 @@ import  { useEffect, useState } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
-import { Home } from './pages/Home.js';
+// import { Home } from './pages/Home.js';
 import { About } from './pages/About.js';
 import { Benefits } from './pages/Benefits.js';
 import { Contact } from './pages/Contact.js';
@@ -19,7 +19,7 @@ const ScrollToTop = () => {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      setIsVisible(window.pageYOffset > 200); // Aparece al hacer scroll 200px
+      setIsVisible(window.pageYOffset > 200);
     };
 
     window.addEventListener('scroll', toggleVisibility);
@@ -67,7 +67,7 @@ const App = () => {
       <div className="flex-grow">
         <Routes>
         <Route path="/Amoseba-web" element={<HomePage />} />
-          <Route path="/Amoseba-web/home" element={<Home />} />
+          {/* <Route path="/Amoseba-web/home" element={<Home />} /> */}
           <Route path="/Amoseba-web/about" element={<About />} />
           <Route path="/Amoseba-web/benefits" element={<Benefits />} />
           <Route path="/Amoseba-web/contact" element={<Contact />} />

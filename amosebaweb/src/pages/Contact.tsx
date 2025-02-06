@@ -165,8 +165,8 @@ export const Contact = () => {
   });
 
   return (
-    <div className="p-6 md:p-8 bg-gray-100 rounded-lg shadow-lg max-w-4xl mx-auto text-center mt-10 mb-10 w-full">
-      <h1 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">Contáctanos</h1>
+    <div className="p-6 md:p-8 bg-gray-100 rounded-lg shadow-lg max-w-5xl mx-auto text-center mt-10 mb-10 w-full">
+      <h1 className="text-3xl md:text-4xl font-bold text-[#A39F73] mb-6">Contáctanos</h1>
       <form onSubmit={formik.handleSubmit} className="space-y-6">
         <div className="text-left">
           <label className="block text-sm font-bold text-gray-700">Nombre:</label>

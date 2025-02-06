@@ -8,6 +8,12 @@ import pesos from './pesos.png';
 import card1 from './card1.png';
 import card2 from './card2.png';
 import card3 from './card3.png';
+import legal from './legal.png';
+import linea from './linea.png';
+import optica from './optica.png';
+import calle from './calle.png';
+import viaje from './viaje.png';
+import hogar from './hogar.png';
 
 export { 
     banner,
@@ -19,5 +25,11 @@ export {
     pesos,
     card1,
     card2,
-    card3
+    card3,
+    hogar,
+    optica,
+    linea,
+    legal,
+    calle,
+    viaje,
  };
