@@ -37,6 +37,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+// import { pesos } from "../assets";
 import { pesos } from "../assets";
 
 const Banner: React.FC = () => {
@@ -52,7 +53,7 @@ const Banner: React.FC = () => {
         <motion.img
           src={pesos}
           alt="Pesos argentinos"
-          className="drop-shadow-xl rounded-md w-full max-w-xs sm:max-w-sm md:max-w-4xl md:-ml-10 lg:max-w-3xl mt-6 sm:mt-4 md:mt-24"
+          className="drop-shadow-xl rounded-md w-full max-w-xs sm:max-w-sm md:max-w-4xl md:-ml-10 lg:max-w-3xl mt-6 sm:mt-4 md:mt-24 " 
           animate={{ 
             y: [0, -10, 0],
           }}
@@ -108,7 +109,7 @@ const Banner: React.FC = () => {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.8, duration: 0.6 }}
-          className="text-xl text-white mt-6 max-w-lg"
+          className="text-xl text-white mt-6 max-w-lg " // Add margin-bottom on extra small screens
         >
           Con la tranquilidad de no tener costos ocultos
         </motion.p>

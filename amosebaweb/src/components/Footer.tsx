@@ -1,11 +1,12 @@
-import React from 'react';
+// import React from 'react';
 import { Phone, Mail, MapPin, Facebook, Twitter, Instagram } from 'lucide-react';
 import { logo } from '../assets/index';
 import { Link } from 'react-router-dom';
 
 export const Footer = () => (
   // <footer className=" bg-gradient-to-r from-[#A39F73] to-[#CAC792] text-white py-12">
-  <footer className=" bg-[#CAC792] text-white py-12">
+  <footer className=" bg-[#A39F73] text-white py-12">
+  {/* <footer className=" bg-[#CAC792] text-white py-12"> */}
     <div className="container mx-auto px-4 max-w-screen-lg">
       <div className="grid md:grid-cols-3 gap-8 justify-items-center">
         {/* <div className="text-center"> 

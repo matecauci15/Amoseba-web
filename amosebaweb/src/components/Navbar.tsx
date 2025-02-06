@@ -10,11 +10,11 @@ export const Navbar: React.FC = () => {
   const menuRef = useRef<HTMLDivElement>(null);
 
   const navItems: { name: string; href: string }[] = [
-    { name: "Nosotros", href: "/home" },
-    { name: "Beneficios", href: "/benefits" },
-    { name: "Subsidios", href: "/subsidios" },
-    { name: "Servicios", href: "/services" },
-    { name: "Contacto", href: "/contact" },
+    { name: "Nosotros", href: "/Amoseba-web/home" },
+    { name: "Beneficios", href: "/Amoseba-web/benefits" },
+    { name: "Subsidios", href: "/Amoseba-web/subsidios" },
+    { name: "Servicios", href: "/Amoseba-web/services" },
+    { name: "Contacto", href: "/Amoseba-web/contact" },
     { name: "Beneficios Plus", href: "https://amosebaplus.com/" },
   ];
 

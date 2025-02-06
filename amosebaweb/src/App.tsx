@@ -67,11 +67,11 @@ const App = () => {
       <div className="flex-grow">
         <Routes>
         <Route path="/Amoseba-web" element={<HomePage />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/benefits" element={<Benefits />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/services" element={<Services />} />
+          <Route path="/Amoseba-web/home" element={<Home />} />
+          <Route path="/Amoseba-web/about" element={<About />} />
+          <Route path="/Amoseba-web/benefits" element={<Benefits />} />
+          <Route path="/Amoseba-web/contact" element={<Contact />} />
+          <Route path="/Amoseba-web/services" element={<Services />} />
         </Routes>
         <ScrollToTop/>
         <WhapButton />
