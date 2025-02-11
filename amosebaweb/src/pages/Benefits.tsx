@@ -127,15 +127,15 @@ Farmacias de turno dentro de la República Argentina.`,
   ];
 
   return (
-    <div className="p-6 sm:p-10 bg-gray-100 max-w-5xl mx-auto mt-10 mb-10 rounded-lg shadow-lg">
-      <h1 className="text-4xl font-bold mb-6 text-[#A39F73] text-center">Nuestros Beneficios</h1>
+    <div className="p-6 md:pl-26 md:pr-26 sm:p-10 bg-gradient-to-b from-[#CAC792] to-gray-50 mt-8 ">
+      <h1 className="text-5xl font-bold mb-8 text-white text-center">Nuestros Beneficios</h1>
 
       {/* Grid de Beneficios */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-20 ">
         {benefits.map((benefit, index) => (
           <motion.div
             key={index}
-            className="flex flex-col items-center bg-white p-5 rounded-lg shadow-lg overflow-hidden h-full"
+            className="flex flex-col items-center bg-white p-5 rounded-lg shadow-lg overflow-hidden h-full transform transition-all hover:scale-[1.08] duration-30"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}

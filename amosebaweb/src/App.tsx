@@ -92,6 +92,8 @@
 // };
 
 // export default App;
+
+
 import { useEffect, useState } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
@@ -103,8 +105,8 @@ import { Services } from './pages/Services.js';
 import { ArrowUp } from 'lucide-react';
 import { WhapButton } from './components/whapButton';
 import { HomePage } from './pages/HomePage';
-// import amoseba from '../public/amoseba.gif';
 import logo from '../public/logo.gif';
+import { Subsidies } from './pages/Subsidies.js';
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -128,7 +130,7 @@ const ScrollToTop = () => {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-24 right-[25px] bg-[#10B981] p-3 rounded-full shadow-lg 
+      className={`fixed bottom-8 left-[23px] bg-[#10B981] p-3 rounded-full shadow-lg 
         transition-all duration-300 z-50 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
     >
       <ArrowUp className="text-white" />
@@ -186,6 +188,7 @@ const App = () => {
             <Route path="/Amoseba-web/benefits" element={<Benefits />} />
             <Route path="/Amoseba-web/contact" element={<Contact />} />
             <Route path="/Amoseba-web/services" element={<Services />} />
+            <Route path="/Amoseba-web/subsidios" element={<Subsidies />} />
           </Routes>
           <ScrollToTop />
           <WhapButton />

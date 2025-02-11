@@ -1,5 +1,6 @@
 import React from "react";
 import { card1, card2, card3 } from "../assets/index";
+import { Link } from "react-router-dom";
 
 export const Cards: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ export const Cards: React.FC = () => {
           SUBSIDIOS
         </h1>
         {/* Botón Redondo */}
+        <Link to='/Amoseba-web/subsidios'>
         <button className="absolute bottom-4 right-4 bg-[#EEA987] text-white rounded-full p-3 shadow-lg hover:bg-[#ff8548] transition duration-300">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -23,10 +25,11 @@ export const Cards: React.FC = () => {
             viewBox="0 0 24 24"
             stroke="currentColor"
             strokeWidth={2}
-          >
+            >
             <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
           </svg>
         </button>
+            </Link>
       </div>
 
       {/* Card 2 */}
@@ -40,6 +43,7 @@ export const Cards: React.FC = () => {
           BENEFICIOS
         </h1>
         {/* Botón Redondo */}
+        <Link to='/Amoseba-web/benefits'>
         <button className="absolute bottom-4 right-4 bg-[#EEA987] text-white rounded-full p-3 shadow-lg hover:bg-[#ff8548] transition duration-300">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -48,10 +52,11 @@ export const Cards: React.FC = () => {
             viewBox="0 0 24 24"
             stroke="currentColor"
             strokeWidth={2}
-          >
+            >
             <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
           </svg>
         </button>
+            </Link>
       </div>
 
       {/* Card 3 */}
@@ -65,6 +70,7 @@ export const Cards: React.FC = () => {
           SERVICIOS
         </h1>
         {/* Botón Redondo */}
+        <Link to='/Amoseba-Web/services'>
         <button className="absolute bottom-4 right-4 bg-[#EEA987] text-white rounded-full p-3 shadow-lg hover:bg-[#ff8548] transition duration-300">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -73,10 +79,11 @@ export const Cards: React.FC = () => {
             viewBox="0 0 24 24"
             stroke="currentColor"
             strokeWidth={2}
-          >
+            >
             <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14m-7-7l7 7-7 7" />
           </svg>
         </button>
+            </Link>
       </div>
     </div>
   );
