@@ -101,7 +101,7 @@ import { Footer } from './components/Footer';
 import { About } from './pages/About.js';
 import { Benefits } from './pages/Benefits.js';
 import { Contact } from './pages/Contact.js';
-import { Services } from './pages/Services.js';
+import Services  from './pages/Services';
 import { ArrowUp } from 'lucide-react';
 import { WhapButton } from './components/whapButton';
 import { HomePage } from './pages/HomePage';
