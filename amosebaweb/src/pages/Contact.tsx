@@ -274,7 +274,7 @@ export const Contact = () => {
     <div className=" mx-auto mt-10 bg-gradient-to-b from-[#CAC792] to-gray-50">
       <div className="rounded-xl overflow-hidden">
         <div className="p-8  mb-8  items-center justify-center ">
-          <h2 className="text-5xl font-bold text-center items-center  text-white mt-2 mb-6">
+          <h2 className="text-5xl font-montserrat font-black text-center items-center  text-white mt-2 mb-6">
             Nuestra Ubicación
           </h2>
           <div className="flex justify-center">
@@ -289,7 +289,7 @@ export const Contact = () => {
             </div>
           </div>
         </div>
-        <h1 className="text-4xl text-white  font-bold text-center mb-2">
+        <h1 className="text-4xl text-white  font-montserrat font-black text-center mb-2">
           Contáctanos
         </h1>
         <p className="text-center text-white mb-5 opacity-90">

@@ -139,7 +139,7 @@ export const Subsidies: React.FC = () => {
           {/* <div className="inline-flex items-center justify-center p-2 bg-[#A39F73]/10 rounded-full mb-6">
             <Info className="text-[#A39F73]" />
           </div> */}
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h1 className="text-5xl md:text-5xl font-montserrat font-black text-white mb-4">
             Subsidios para nuestros socios
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
