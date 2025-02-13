@@ -107,6 +107,7 @@ import { WhapButton } from './components/whapButton';
 import { HomePage } from './pages/HomePage';
 import logo from '../public/logo.gif';
 import { Subsidies } from './pages/Subsidies.js';
+import ScrollTransition from './components/ScrollTransition.js';
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -130,7 +131,7 @@ const ScrollToTop = () => {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-8 left-[23px] bg-[#10B981] p-3 rounded-full shadow-lg 
+      className={`fixed bottom-8 left-[23px] bg-gray-400 p-3 rounded-full shadow-lg 
         transition-all duration-300 z-50 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
     >
       <ArrowUp className="text-white" />
@@ -176,10 +177,14 @@ const App = () => {
   return (
     <div className="flex flex-col min-h-screen bg-[#CAC792]">
       {/* Mostrar el loader mientras isLoading sea true */}
+      <ScrollTransition />
       {isLoading && <Loader />}
-
       {/* Contenido principal */}
-      <div className={`${isLoading ? 'opacity-0' : 'opacity-100'} transition-opacity duration-500`}>
+      <div
+        className={`${
+          isLoading ? "opacity-0" : "opacity-100"
+        } transition-opacity duration-500`}
+      >
         <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
         <div className="flex-grow">
           <Routes>

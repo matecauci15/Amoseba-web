@@ -128,7 +128,7 @@ Farmacias de turno dentro de la República Argentina.`,
 
   return (
     <div className="p-6 md:pl-26 md:pr-26 sm:p-10 bg-gradient-to-b from-[#CAC792] to-gray-50 mt-8 ">
-      <h1 className="text-5xl font-bold mb-8 text-white text-center">Nuestros Beneficios</h1>
+      <h1 className="text-5xl font-montserrat font-black mb-8 text-white text-center">Nuestros Beneficios</h1>
 
       {/* Grid de Beneficios */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-20 ">

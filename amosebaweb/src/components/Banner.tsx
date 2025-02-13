@@ -212,6 +212,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { pesos } from "../assets";
+import '../index.css'
 
 const EnhancedButton = () => {
   return (
@@ -244,24 +245,10 @@ const EnhancedButton = () => {
       {/* Animated background shine effect */}
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent 
         translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000" />
-      
-      {/* Pulsing circle behind the rocket */}
-      <motion.div
-        className="absolute left-4 w-8 h-8 bg-white/20 rounded-full"
-        animate={{
-          scale: [1, 1.2, 1],
-          opacity: [0.2, 0.4, 0.2],
-        }}
-        transition={{
-          duration: 2,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      />
+
 
       {/* Text container */}
       <div className="flex items-center gap-3">
-        <span className="text-2xl">🚀</span>
         <span className="relative">
           Solicitá Ahora
           <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-white/40 

@@ -128,6 +128,7 @@ import { Menu, X } from "lucide-react";
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import amosebalogo from "../assets/amosebalogo.png";
+import CTAButton from "./CTAbutton";
 
 export const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -165,14 +166,14 @@ export const Navbar: React.FC = () => {
   return (
     <div className="w-full flex flex-col md:flex-row items-center md:items-stretch mt-10 mx-auto max-w-7xl px-4">
       {/* Main Navbar */}
-      <header className="w-full md:w-[85%] max-h-20 h-[80px] md:h-[100px] bg-white rounded-full shadow-lg flex items-center justify-between px-6 md:px-8 z-10 relative">
+      <header className="w-full md:w-[85%] max-h-15 h-[80px] md:h-[100px] bg-white rounded-full shadow-lg flex items-center justify-between px-6 md:px-8 z-10 relative">
         {/* Logo */}
         <div className="flex md:w-64 md:max-w-64 md:ml-10 w-48 sm:w-56">
           <Link to="/Amoseba-web">
             <img
               src={amosebalogo}
               alt="Logo"
-              className="object-contain w-[clamp(140px,18vw,300px)] h-auto"
+              className="object-contain w-[clamp(140px,18vw,200px)] h-auto"
             />
           </Link>
         </div>
@@ -184,7 +185,7 @@ export const Navbar: React.FC = () => {
               <li key={item.name} className="min-w-[90px] max-w-[160px]">
                 <Link
                   to={item.href}
-                  className={`text-white text-xs max-w-24 w-full h-7 bg-[#E8A598]/70 rounded-4xl px-3 py-1.5 hover:bg-[#E8A598]/90 transition-colors duration-200 flex items-center justify-center text-[clamp(0.85rem,1.2vw,1.1rem)] ${
+                  className={`text-white text-xs max-w-24 w-full h-6 bg-[#E8A598]/70 rounded-4xl px-3 py-1.5 hover:bg-[#E8A598]/90 transition-colors duration-200 flex items-center justify-center text-[clamp(0.75rem,1vw,0.85rem)] ${
                     location.pathname === item.href ? "font-bold" : ""
                   }`}
                 >
@@ -209,23 +210,25 @@ export const Navbar: React.FC = () => {
       </header>
 
       {/* CTA Button (Desktop) */}
-      <a
+      {/* <a
         href="https://amosebaplus.com/"
         target="_blank"
         rel="noopener noreferrer"
-        className="hidden md:flex w-full md:w-[20%] max-h-20 h-[50px] md:h-[100px] bg-[#E8A598] text-white rounded-full md:rounded-l-none md:-ml-[5%] hover:bg-red-300 transition-colors duration-200 items-center justify-center"
+        className="hidden md:flex w-full md:w-[18%] max-h-15 h-[50px] md:h-[100px] bg-[#E8A598] text-white rounded-full md:rounded-l-none md:-ml-[5%] hover:bg-red-300 transition-colors duration-200 items-center justify-center"
       >
         <span className="pl-2 md:pl-6">
           <p className="font-bold text-sm md:text-xl mb-[-10%]">Beneficios</p>
           <i className="text-right ml-4 md:ml-16">plus</i>
         </span>
-      </a>
+      </a> */}
+        <CTAButton />
 
+        
       {/* Mobile Menu */}
       {isMenuOpen && (
         <nav
           ref={menuRef}
-          className="w-11/12 md:hidden mt-7 bg-white rounded-3xl text-center text-white shadow-lg p-6 absolute top-[90px] z-50 left-1/2 transform -translate-x-1/2"
+          className="w-11/12 md:hidden mt-2 bg-white rounded-3xl text-center text-white shadow-lg p-6 absolute top-[90px] z-50 left-1/2 transform -translate-x-1/2"
         >
           <ul className="space-y-3">
             {navItems.map((item) => (

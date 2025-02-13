@@ -4,10 +4,14 @@ import { Cards } from '../components/Cards';
 
 export const HomePage: React.FC = () => {
   return (
-      <div className='bg-white'>
+    <div className='bg-white'>
       <Banner />
       <div className='text-center items-center align-middle justify-center bg-white p-10 mt-16'> 
-        <h1 className='text-[#A39F73] text-2xl font-bold'>BIENVENIDOS A AMOSEBA</h1>
+        <div className="flex justify-center">
+          <h1 className='text-white text-xl sm:text-2xl font-bold bg-[#a9a952] shadow-2xl  px-6 py-2 rounded-full inline-block'>
+            BIENVENIDOS A AMOSEBA
+          </h1>
+        </div>
         <h2 className='text-[#A39F73] mt-5 text-xl font-semibold'>
           ASOCIACIÓN MUTUAL OBREROS, EMPLEADOS DE LA SALUD <br />Y EDUCACION DE LA CIUDAD DE BUENOS AIRES
         </h2>
@@ -17,6 +21,6 @@ export const HomePage: React.FC = () => {
         </p>
         <Cards />
       </div>
-      </div>
+    </div>
   );
 };
