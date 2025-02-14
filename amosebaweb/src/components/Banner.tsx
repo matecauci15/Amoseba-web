@@ -6,7 +6,7 @@ import '../index.css'
 const EnhancedButton = () => {
   return (
     <motion.a
-      href="https://wa.me/5491123456789"
+      href="https://wa.me/5491130230633"
       target="_blank"
       rel="noopener noreferrer"
       initial={{ opacity: 0, scale: 0.8 }}

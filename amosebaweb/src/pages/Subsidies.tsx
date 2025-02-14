@@ -1,73 +1,6 @@
-// import React from "react";
-// import { motion } from "framer-motion";
-// import { Baby, Heart } from "lucide-react";
-// // import fallecimientoImg from "../assets/fallecimiento.jpg";
-// // import nacimientoImg from "../assets/nacimiento.jpg";
-
-// export const Subsidies: React.FC = () => {
-//   return (
-//     <div className="p-10 mx-auto text-center mt-8  bg-gradient-to-b from-[#CAC792] to-gray-50">
-//       <h1 className="text-5xl font-bold mb-6 text-white  flex justify-center items-center gap-2">
-//         Nuestros Subsidios
-//       </h1>
-//       <p className="text-lg text-gray-700 mb-8">
-//         Apoyamos a nuestros socios en los momentos más importantes de sus vidas con subsidios exclusivos.
-//       </p>
-
-//       {/* Subsidio por Fallecimiento */}
-//       <motion.div
-//         className="bg-white p-6 rounded-lg shadow-lg mb-10 flex flex-col md:flex-row items-center md:items-start gap-6"
-//         initial={{ opacity: 0, y: 20 }}
-//         whileInView={{ opacity: 1, y: 0 }}
-//         viewport={{ once: true }}
-//         transition={{ duration: 0.6, ease: "easeOut" }}
-//       >
-//         {/* <img
-//           src={fallecimientoImg}
-//           alt="Subsidio por Fallecimiento"
-//           className="w-full md:w-1/3 rounded-lg shadow-md"
-//         /> */}
-//         <div className="text-center">
-//           <h2 className="text-2xl font-semibold text-gray-700 flex text-center justify-center items-center gap-2">
-//             <Heart size={30} className="text-[#EEA987]" />
-//             Subsidio por Fallecimiento
-//           </h2>
-//           <p className="text-gray-700 mt-2">
-//             Este subsidio será entregado a la persona designada por el asociado en su solicitud de ingreso, ayudando a su familia en momentos difíciles.
-//           </p>
-//         </div>
-//       </motion.div>
-
-//       {/* Subsidio por Nacimiento */}
-//       <motion.div
-//         className="bg-white p-6 rounded-lg shadow-lg mb-6 flex flex-col md:flex-row-reverse items-center md:items-start gap-6"
-//         initial={{ opacity: 0, y: 20 }}
-//         whileInView={{ opacity: 1, y: 0 }}
-//         viewport={{ once: true }}
-//         transition={{ duration: 0.6, ease: "easeOut" }}
-//       >
-//         {/* <img
-//           src={nacimientoImg}
-//           alt="Subsidio por Nacimiento"
-//           className="w-full md:w-1/3 rounded-lg shadow-md"
-//         /> */}
-//         <div className="text-center justify-center">
-//           <h2 className="text-2xl font-semibold text-gray-700 text-center justify-center flex items-center gap-2">
-//             <Baby size={30} className="text-[#EEA987]" />
-//             Subsidio por Nacimiento
-//           </h2>
-//           <p className="text-gray-700 mt-2">
-//             Acompañamos a nuestras familias con un subsidio especial por cada nacimiento o adopción, brindando apoyo en esta nueva etapa de vida.
-//           </p>
-//         </div>
-//       </motion.div>
-//     </div>
-//   );
-// };
-
-
 import React, { useState } from "react";
-import { Baby, Heart, Plus, ChevronRight, Info } from "lucide-react";
+import { Baby, Heart, Plus, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface SubsidyCardProps {
   icon: React.ReactNode;
@@ -176,17 +109,20 @@ export const Subsidies: React.FC = () => {
           />
         </div>
 
-        {/* Additional Info */}
         <div className="mt-16 p-6 bg-gray-50 rounded-2xl">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="text-gray-600">
               <h3 className="text-xl font-semibold mb-2">¿Necesitas más información?</h3>
               <p>Nuestro equipo está disponible para ayudarte con cualquier consulta.</p>
             </div>
+            <Link 
+            target="_blanck"
+            to="https://wa.me/5491130230633">
             <button className="px-6 py-3 bg-[#A39F73] text-white rounded-xl hover:bg-[#8B864F] 
               transition-colors duration-300 shadow-lg hover:shadow-xl">
               Contactar Ahora
             </button>
+                </Link>
           </div>
         </div>
       </div>
