@@ -61,7 +61,7 @@ const services: Service[] = [
 
 const Services: React.FC = () => {
   return (
-    <div className="bg-gradient-to-b from-[#CAC792] to-gray-50 py-17 ">
+    <div className="bg-gradient-to-b from-[#CAC792] to-gray-50 py-17 mt-18">
       <div className="mx-auto max-w-6xl px-4">
         <div className="mb-16 text-center">
           <h2 className="mb-6 text-4xl font-montserrat font-black text-white sm:text-5xl">

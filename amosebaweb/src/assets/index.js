@@ -4,6 +4,7 @@ import banner3 from './banner3.png';
 import logo from './logo.png';
 import amosebalogo from './amosebalogo.png';
 import logoamo from './logoamo.png';
+
 import pesos from './pesos.png';
 import card1 from './card1.png';
 import card2 from './card2.png';
@@ -22,7 +23,6 @@ export {
     banner3,
     amosebalogo,
     logoamo,
-    pesos,
     card1,
     card2,
     card3,
@@ -32,4 +32,5 @@ export {
     legal,
     calle,
     viaje,
+    pesos
  };

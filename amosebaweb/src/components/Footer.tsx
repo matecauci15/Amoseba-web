@@ -31,12 +31,12 @@ export const Footer = () => (
         <div>
           <div className="flex flex-col items-center mt-2">
             <ul className="flex flex-col md:items-start">
-              <Link to="/Amoseba-Web/about">
+              <Link to="/Amoseba-Web/nosotros">
                 <li className="mb-1.5 hover:text-[#e4baa4] flex items-center">
                   <ChevronRight className="w-4 h-4 mr-2" /> Nosotros
                 </li>
               </Link>
-              <Link to="/Amoseba-Web/benefits">
+              <Link to="/Amoseba-Web/beneficios">
                 <li className="mb-1.5 hover:text-[#e4baa4] flex items-center">
                   <ChevronRight className="w-4 h-4 mr-2" /> Beneficios
                 </li>
@@ -46,12 +46,12 @@ export const Footer = () => (
                   <ChevronRight className="w-4 h-4 mr-2" /> Subsidios
                 </li>
               </Link>
-              <Link to="/Amoseba-Web/services">
+              <Link to="/Amoseba-Web/servicios">
                 <li className="mb-1.5 hover:text-[#e4baa4] flex items-center">
                   <ChevronRight className="w-4 h-4 mr-2" /> Servicios
                 </li>
               </Link>
-              <Link to="/Amoseba-Web/contact">
+              <Link to="/Amoseba-Web/contacto">
                 <li className="mb-1.5 hover:text-[#e4baa4] flex items-center">
                   <ChevronRight className="w-4 h-4 mr-2" /> Contacto
                 </li>

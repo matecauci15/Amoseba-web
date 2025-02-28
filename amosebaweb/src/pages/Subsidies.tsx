@@ -65,7 +65,7 @@ const SubsidyCard: React.FC<SubsidyCardProps> = ({ icon, title, description, det
 
 export const Subsidies: React.FC = () => {
   return (
-    <div className="min-h-screen  bg-gradient-to-b from-[#CAC792] to-gray-50 py-16 px-4">
+    <div className="min-h-screen  bg-gradient-to-b from-[#CAC792] to-gray-50 py-16 px-4 mt-19">
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">

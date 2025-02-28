@@ -1,5 +1,7 @@
 import React from "react";
-import { card1, card2, card3 } from "../assets/index";
+import card1  from "../assets/card1.png";
+import  card3  from "../assets/card3.png";
+import  card2 from "../assets/card2.png";
 import { Link } from "react-router-dom";
 
 export const Cards: React.FC = () => {
@@ -43,7 +45,7 @@ export const Cards: React.FC = () => {
           BENEFICIOS
         </h1>
         {/* Botón Redondo */}
-        <Link to='/Amoseba-web/benefits'>
+        <Link to='/Amoseba-web/beneficios'>
         <button className="absolute bottom-4 right-4 bg-[#EEA987] text-white rounded-full p-3 shadow-lg hover:bg-[#ff8548] transition duration-300">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +72,7 @@ export const Cards: React.FC = () => {
           SERVICIOS
         </h1>
         {/* Botón Redondo */}
-        <Link to='/Amoseba-Web/services'>
+        <Link to='/Amoseba-Web/servicios'>
         <button className="absolute bottom-4 right-4 bg-[#EEA987] text-white rounded-full p-3 shadow-lg hover:bg-[#ff8548] transition duration-300">
           <svg
             xmlns="http://www.w3.org/2000/svg"
