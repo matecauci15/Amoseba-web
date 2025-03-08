@@ -15,6 +15,11 @@ import optica from './optica.png';
 import calle from './calle.png';
 import viaje from './viaje.png';
 import hogar from './hogar.png';
+import carrefour from './carrefour.png';
+import ypf from './ypf.png';
+import burger from './burger.png';
+import lentes from './lentes.png';
+
 
 export { 
     banner,
@@ -32,5 +37,9 @@ export {
     legal,
     calle,
     viaje,
-    pesos
+    pesos,
+    ypf,
+    lentes,
+    burger,
+    carrefour
  };
