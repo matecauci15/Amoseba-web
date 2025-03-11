@@ -315,7 +315,7 @@ import pesos from "../assets/pesos.png";
 import '../index.css';
 import {ypf, burger, carrefour, lentes} from '../assets/index';
 
-// Original EnhancedButton component
+// EnhancedButton component
 const EnhancedButton = () => {
   return (
     <motion.a
@@ -396,7 +396,7 @@ const Banner1 = () => {
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ type: "spring", stiffness: 260, damping: 20, delay: 0.2 }}
-          className="text-lg sm:text-xl font-montserrat font-bold bg-white text-[#CAC792] px-6 py-2 rounded-full shadow-md"
+          className="text-lg sm:text-xl font-montserrat font-bold bg-white text-[#CAC792] px-6 py-1 rounded-full shadow-md"
         >
           EMPLEADOS GCBA
         </motion.p>
@@ -429,7 +429,6 @@ const Banner1 = () => {
 const Banner2 = () => {
     return (
       <div className=" relative w-full flex flex-col mt-35 md:mt-0 md:flex-row items-center justify-around text-center overflow-hidden bg-[#CAC792] min-h-[600px]">
-        
         {/* Texto */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -437,29 +436,30 @@ const Banner2 = () => {
           transition={{ duration: 0.5 }}
           className="w-full md:w-1/2 flex flex-col items-center text-center px-6 mx-auto"
         >
-<motion.p
-  initial={{ scale: 0 }}
-  animate={{ scale: 1 }}
-  transition={{
-    type: "spring",
-    stiffness: 260,
-    damping: 20,
-    delay: 0.2,
-  }}
-  className="text-md md:text-lg text-center sm:text-xl font-montserrat font-bold bg-white text-[#CAC792] px-3 md:px-6 py-1 md:py-2 rounded-full shadow-md inline-block mb-4 md:mb-8 max-w-[280px] md:max-w-none"
->
-  SI ESTÁS ADHERIDO A AMOSEBA, SOS PARTE DE
-</motion.p>
-  
-<motion.h2
-  initial={{ y: 50, opacity: 0 }}
-  animate={{ y: 0, opacity: 1 }}
-  transition={{ delay: 0.4, duration: 0.6 }}
-  className="text-4xl xs:text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-montserrat font-bold text-white mb-6 text-center"
->
-  BENEFICIOS <br /><span className="font-light italic">plus</span>
-</motion.h2>
-  
+          <motion.p
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{
+              type: "spring",
+              stiffness: 260,
+              damping: 20,
+              delay: 0.2,
+            }}
+            className="text-md md:text-lg text-center sm:text-xl font-montserrat font-bold bg-white text-[#CAC792] px-3 md:px-6 py-1 md:py-1 rounded-full shadow-md inline-block mb-4 md:mb-8 max-w-[280px] md:max-w-none"
+          >
+            SI ESTÁS ADHERIDO A AMOSEBA, SOS PARTE DE
+          </motion.p>
+
+          <motion.h2
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.4, duration: 0.6 }}
+            className="text-4xl xs:text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-montserrat font-bold text-white mb-6 text-center"
+          >
+            BENEFICIOS <br />
+            <span className="font-light italic  ">plus</span>
+          </motion.h2>
+
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -469,53 +469,53 @@ const Banner2 = () => {
             ¡Y CONTÁS CON ESTOS <br /> Y MUCHOS MÁS BENEFICIOS!
           </motion.p>
         </motion.div>
-  
+
         {/* Imágenes */}
         <motion.div
-  className="relative w-full md:w-1/2 h-[400px] md:h-[500px] flex justify-center -mt-10 md:-mt-30"
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8, delay: 0.6 }}
->
-  {/* Burger */}
-  <div className="absolute left-1/2 -translate-x-3/4 top-0 w-64 h-64 md:w-64 md:h-64 lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px] z-30 transform rotate-3">
-    <motion.img
-      src={burger}
-      alt="Burger"
-      className="w-full h-full object-contain"
-      style={{ filter: "drop-shadow(0 20px 13px rgb(0 0 0 / 0.15))" }}
-      transition={{ duration: 0.3 }}
-    />
-  </div>
-  
-  {/* YPF */}
-  <div className="absolute left-1/2 -translate-x-1/2 top-16 w-64 h-64 md:w-64 md:h-64 lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px] z-20 transform -rotate-6">
-    <motion.img
-      src={ypf}
-      alt="YPF"
-      className="w-full h-full object-contain"
-      style={{ filter: "drop-shadow(0 20px 13px rgb(0 0 0 / 0.15))" }}
-      transition={{ duration: 0.3 }}
-    />
-  </div>
-  
-  {/* Carrefour */}
-  <div className="absolute left-1/2 -translate-x-1/4 top-32 w-64 h-64 md:w-64 md:h-64 lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px] z-10 transform rotate-12">
-    <motion.img
-      src={carrefour}
-      alt="Carrefour"
-      className="w-full h-full object-contain"
-      style={{ filter: "drop-shadow(0 20px 13px rgb(0 0 0 / 0.15))" }}
-      transition={{ duration: 0.3 }}
-    />
-  </div>
-</motion.div>
+          className="relative w-full md:w-1/2 h-[400px] md:h-[500px] flex justify-center -mt-10 md:-mt-30"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+        >
+          {/* Burger */}
+          <div className="absolute left-1/2 -translate-x-3/4 top-0 w-64 h-64 md:w-64 md:h-64 lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px] z-30 transform rotate-3">
+            <motion.img
+              src={burger}
+              alt="Burger"
+              className="w-full h-full object-contain"
+              style={{ filter: "drop-shadow(0 20px 13px rgb(0 0 0 / 0.15))" }}
+              transition={{ duration: 0.3 }}
+            />
+          </div>
+
+          {/* YPF */}
+          <div className="absolute left-1/2 -translate-x-1/2 top-16 w-64 h-64 md:w-64 md:h-64 lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px] z-20 transform -rotate-6">
+            <motion.img
+              src={ypf}
+              alt="YPF"
+              className="w-full h-full object-contain"
+              style={{ filter: "drop-shadow(0 20px 13px rgb(0 0 0 / 0.15))" }}
+              transition={{ duration: 0.3 }}
+            />
+          </div>
+
+          {/* Carrefour */}
+          <div className="absolute left-1/2 -translate-x-1/4 top-32 w-64 h-64 md:w-64 md:h-64 lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px] z-10 transform rotate-12">
+            <motion.img
+              src={carrefour}
+              alt="Carrefour"
+              className="w-full h-full object-contain"
+              style={{ filter: "drop-shadow(0 20px 13px rgb(0 0 0 / 0.15))" }}
+              transition={{ duration: 0.3 }}
+            />
+          </div>
+        </motion.div>
       </div>
     );
   };
   
   
-// Third Banner (for optical products)
+// Third Banner
 const Banner3 = () => {
   return (
     <div className="relative w-full flex flex-col md:flex-row items-center justify-between text-center overflow-hidden py-8 md:py-16 bg-[#CAC792] min-h-[600px]">
@@ -525,7 +525,6 @@ const Banner3 = () => {
         transition={{ duration: 0.8 }}
         className="flex justify-center w-full md:w-1/2 px-4 md:px-8"
       >
-        {/* Using placeholder image - you would replace with your actual image */}
         <motion.div
           className="drop-shadow-xl rounded-md w-full max-w-[500px] h-[300px] flex items-center justify-center"
           animate={{ y: [0, -10, 0] }}
@@ -541,27 +540,27 @@ const Banner3 = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-<motion.p
-  initial={{ scale: 0 }}
-  animate={{ scale: 1 }}
-  transition={{
-    type: "spring",
-    stiffness: 260,
-    damping: 20,
-    delay: 0.2,
-  }}
-  className="text-md md:text-lg text-center sm:text-xl font-montserrat font-bold bg-white text-[#CAC792] px-3 md:px-6 py-1 md:py-2 rounded-full shadow-md inline-block mb-4 md:mb-8 max-w-[280px] md:max-w-none"
->
-  SI ESTÁS ADHERIDO A AMOSEBA, SOS PARTE DE
-</motion.p>
+        <motion.p
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+            delay: 0.2,
+          }}
+          className="text-md md:text-lg text-center sm:text-xl font-montserrat font-bold bg-white text-[#CAC792] px-3 md:px-6 py-1 md:py-1 rounded-full shadow-md inline-block mb-4 max-w-[280px] md:max-w-none"
+        >
+          SI SOS PARTE DE AMOSEBA, CONTAS CON
+        </motion.p>
 
         <motion.h2
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.6 }}
-          className="text-4xl text-center sm:text-5xl lg:text-6xl font-montserrat font-bold text-white"
+          className="text-4xl text-center sm:text-5xl lg:text-4xl font-montserrat font-bold text-white"
         >
-          ANTEOJOS
+          2 PARES DE ANTEOJOS
         </motion.h2>
 
         <motion.h2
@@ -571,7 +570,7 @@ const Banner3 = () => {
           whileHover={{ scale: 1.05 }}
           className="text-4xl sm:text-5xl lg:text-6xl font-montserrat font-bold text-white border-2 px-6 py-3 rounded-full inline-block shadow-lg mt-4"
         >
-          40% OFF
+          SIN CARGO
         </motion.h2>
 
         {/* <EnhancedButton /> */}
@@ -593,7 +592,7 @@ const BannerCarousel = () => {
       return () => clearInterval(timer);
     }, [currentBanner, banners.length]); // Add currentBanner as a dependency
     
-    const handleDotClick = (index) => {
+    const handleDotClick = (index: number) => {
       setCurrentBanner(index);
     };
     

@@ -418,7 +418,7 @@ export const Contact: React.FC = () => {
                 </div>
 
                 {/* Terms and privacy */}
-                <div className="flex items-start">
+                {/* <div className="flex items-start">
                   <div className="flex items-center h-5">
                     <input
                       id="terms"
@@ -432,7 +432,7 @@ export const Contact: React.FC = () => {
                       Acepto la <a href="#" className="text-[#CAC792] hover:underline">política de privacidad</a> y los <a href="#" className="text-[#CAC792] hover:underline">términos y condiciones</a>
                     </label>
                   </div>
-                </div>
+                </div> */}
 
                 {/* Submit Button */}
                 <button
