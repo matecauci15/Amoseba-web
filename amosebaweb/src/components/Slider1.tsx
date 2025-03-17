@@ -415,7 +415,7 @@ const Banner1 = () => {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.6 }}
           whileHover={{ scale: 1.05 }}
-          className="text-4xl sm:text-5xl lg:text-6xl font-montserrat font-bold text-white border-2 px-6 py-3 rounded-full inline-block shadow-lg mt-4"
+          className="text-3xl sm:text-4xl lg:text-5xl font-montserrat font-bold text-white border-2 px-6 py-3 rounded-full inline-block shadow-lg mt-4"
         >
           INMEDIATO
         </motion.h2>
@@ -558,17 +558,17 @@ const Banner3 = () => {
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.6 }}
-          className="text-4xl text-center sm:text-5xl lg:text-4xl font-montserrat font-bold text-white"
+          className="text-2xl text-center sm:text-4xl lg:text-3xl font-montserrat font-bold text-white"
         >
-          2 PARES DE ANTEOJOS
-        </motion.h2>
+          2 PARES DE ANTEOJOS RECETADOS AL AÑO
+        </motion.h2> 
 
         <motion.h2
           initial={{ scale: 0.5, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.6 }}
           whileHover={{ scale: 1.05 }}
-          className="text-4xl sm:text-5xl lg:text-6xl font-montserrat font-bold text-white border-2 px-6 py-3 rounded-full inline-block shadow-lg mt-4"
+          className="text-3xl sm:text-4xl lg:text-5xl font-montserrat font-bold text-white border-2 px-6 py-3 rounded-full inline-block shadow-lg mt-4"
         >
           SIN CARGO
         </motion.h2>
@@ -621,7 +621,7 @@ const BannerCarousel = () => {
         {/* Next Button */}
         <button 
           onClick={handleNextClick}
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white/20 hover:bg-white/40 rounded-full p-3 
+          className="absolute right-4 top-1/2 transform -translate-y-1/2 z-50 bg-white/20 hover:bg-white/40 rounded-full p-3 
           shadow-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white"
           aria-label="Next banner"
         >
