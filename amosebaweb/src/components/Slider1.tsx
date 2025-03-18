@@ -313,7 +313,11 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import pesos from "../assets/pesos.png";
 import '../index.css';
-import {ypf, burger, carrefour, lentes} from '../assets/index';
+// import {ypf, burger, carrefour, lentes} from '../assets/index';
+import ypf  from '../assets/ypf.png';
+import  burger from '../assets/burger.png';
+import carrefour from '../assets/carrefour.png';
+import lentes from '../assets/lentes.png';
 
 // EnhancedButton component
 const EnhancedButton = () => {
