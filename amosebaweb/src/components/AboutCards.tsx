@@ -102,7 +102,7 @@ const stats: StatItem[] = [
   },
   {
     icon: Users,
-    number: "1000+",
+    number: "2000+",
     label: "Socios Activos",
     description: "Creciendo juntos cada día"
   },

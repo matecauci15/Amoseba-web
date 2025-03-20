@@ -187,7 +187,7 @@ export const Navbar: React.FC = () => {
               <li key={item.name} className="min-w-[90px] max-w-[160px]">
                 <Link
                   to={item.href}
-                  className={`text-white text-xs max-w-24 w-full h-6 bg-[#E8A598]/70 rounded-4xl px-3 py-1.5 hover:bg-[#E8A598]/90 transition-colors duration-200 flex items-center justify-center text-[clamp(0.75rem,1vw,0.85rem)] ${
+                  className={`text-white text-xs max-w-24 w-full h-6 bg-[#E8A598]/95 rounded-4xl px-3 py-1.5 hover:bg-[#E8A598]/70 transition-colors duration-200 flex items-center justify-center text-[clamp(0.75rem,1vw,0.85rem)] ${
                     location.pathname === item.href ? "font-bold" : ""
                   }`}
                 >

@@ -16,9 +16,9 @@ const CTAButton: FC<CTAButtonProps> = ({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="hidden md:flex w-[18%] h-[60px] bg-[#E8A598] text-white 
+      className="hidden md:flex w-[18%] h-[60px] bg-[#E8A598]/90 text-white 
         rounded-full md:rounded-l-none md:-ml-[5%]
-        hover:bg-red-300 transition-colors duration-200 
+        hover:bg-[#E8A598]/60 transition-colors duration-200 
         items-center justify-center"
     >
       <div className="relative flex items-center lg:ml-10 md:ml-10  -mt-3">

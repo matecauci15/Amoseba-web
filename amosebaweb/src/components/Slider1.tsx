@@ -311,13 +311,14 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import pesos from "../assets/pesos.png";
+// import pesos from "../assets/pesos.png";
 import '../index.css';
 // import {ypf, burger, carrefour, lentes} from '../assets/index';
 import ypf  from '../assets/ypf.png';
 import  burger from '../assets/burger.png';
 import carrefour from '../assets/carrefour.png';
 import lentes from '../assets/lentes.png';
+import billetes from '../assets/billetes.png';
 
 // EnhancedButton component
 const EnhancedButton = () => {
@@ -339,7 +340,7 @@ const EnhancedButton = () => {
       }}
       whileTap={{ scale: 0.95 }}
       className="group flex items-center justify-center mt-10 gap-2 
-        bg-[#E8A598]/70
+        bg-[#E8A598]
         px-6 py-4 rounded-2xl
         text-base sm:text-xl font-bold text-white 
         shadow-[0_4px_20px_rgba(238,169,135,0.25)]
@@ -381,7 +382,7 @@ const Banner1 = () => {
         className="flex justify-center w-full md:w-1/2 px-4 md:px-8"
       >
         <motion.img
-          src={pesos}
+          src={billetes}
           alt="Pesos argentinos"
           className="drop-shadow-xl rounded-md w-full max-w-[250px] sm:max-w-[300px] md:max-w-[500px] md:ml-36 lg:max-w-[900px]" 
           animate={{ y: [0, -10, 0] }}

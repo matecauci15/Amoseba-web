@@ -16,16 +16,17 @@ export const Footer = () => (
           <div className="space-y-4 text-white flex flex-col  md:items-start">
             <div className="flex items-center gap-5">
               <Phone size={16} className="text-white" />
-              <span>+54 (11) 1234-5678</span>
+              <span>+54 (11) 3023 0633</span>
             </div>
             <div className="flex items-center gap-5">
               <Mail size={16} className="text-white" />
-              <span>info@amoesyecba.org.ar</span>
+              <span>info@amoseba.com.ar</span>
             </div>
             <div className="flex items-center gap-5">
               <MapPin size={16} className="text-white" />
               <span>Buenos Aires, Argentina</span>
             </div>
+            
           </div>
         </div>
         <div>
