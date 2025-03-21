@@ -24,36 +24,35 @@ export const Footer = () => (
             </div>
             <div className="flex items-center gap-5">
               <MapPin size={16} className="text-white" />
-              <span>Buenos Aires, Argentina</span>
+              <span>Florida 165 - 7mo piso <br />Oficina 707 CABA</span>
             </div>
-            
           </div>
         </div>
         <div>
           <div className="flex flex-col items-center mt-2">
             <ul className="flex flex-col md:items-start">
               <Link to="/Amoseba-Web/nosotros">
-                <li className="mb-1.5 hover:text-[#e4baa4] flex items-center">
+                <li className="mb-1.5 hover:text-[#e6b74a] flex items-center">
                   <ChevronRight className="w-4 h-4 mr-2" /> Nosotros
                 </li>
               </Link>
               <Link to="/Amoseba-Web/beneficios">
-                <li className="mb-1.5 hover:text-[#e4baa4] flex items-center">
+                <li className="mb-1.5 hover:text-[#e6b74a] flex items-center">
                   <ChevronRight className="w-4 h-4 mr-2" /> Beneficios
                 </li>
               </Link>
               <Link to="/Amoseba-Web/subsidios">
-                <li className="mb-1.5 hover:text-[#e4baa4] flex items-center">
+                <li className="mb-1.5 hover:text-[#e6b74a] flex items-center">
                   <ChevronRight className="w-4 h-4 mr-2" /> Subsidios
                 </li>
               </Link>
               <Link to="/Amoseba-Web/servicios">
-                <li className="mb-1.5 hover:text-[#e4baa4] flex items-center">
+                <li className="mb-1.5 hover:text-[#e6b74a] flex items-center">
                   <ChevronRight className="w-4 h-4 mr-2" /> Servicios
                 </li>
               </Link>
               <Link to="/Amoseba-Web/contacto">
-                <li className="mb-1.5 hover:text-[#e4baa4] flex items-center">
+                <li className="mb-1.5 hover:text-[#e6b74a] flex items-center">
                   <ChevronRight className="w-4 h-4 mr-2" /> Contacto
                 </li>
               </Link>
@@ -65,12 +64,12 @@ export const Footer = () => (
           {/* <h3 className="text-xl font-bold font-montserrat">Síguenos</h3> */} 
           <Link
           to="https://www.facebook.com/amoseba.caba">
-          <div className='bg-transparent border-2 rounded-4xl p-2 hover:text-[#EEA987]'>
+          <div className='bg-transparent border-2 rounded-4xl p-2 hover:text-[#e6b74a]'>
               <Facebook size={25} />
               </div>
                 </Link>
                 <Link to="https://www.instagram.com/amosebapresta/">
-          <div className='bg-transparent border-2 rounded-4xl p-2 hover:text-[#EEA987]'>
+          <div className='bg-transparent border-2 rounded-4xl p-2 hover:text-[#e6b74a]'>
               <Instagram size={25} />
             </div>
                 </Link>
@@ -81,6 +80,9 @@ export const Footer = () => (
             AMOSEBA
             </div>
           </Link>
+          <div className='font-montserrat text-md mt-'>
+          Matricula INAES N°2458
+            </div>
         </div>
       </div>
     </div>

@@ -187,7 +187,7 @@ export const Navbar: React.FC = () => {
               <li key={item.name} className="min-w-[90px] max-w-[160px]">
                 <Link
                   to={item.href}
-                  className={`text-white text-xs max-w-24 w-full h-6 bg-[#E8A598]/95 rounded-4xl px-3 py-1.5 hover:bg-[#E8A598]/70 transition-colors duration-200 flex items-center justify-center text-[clamp(0.75rem,1vw,0.85rem)] ${
+                  className={`text-white text-xs max-w-24 w-full h-6  bg-[#F3AA00] rounded-4xl px-3 py-1.5 hover:bg-[#F3AA00]/70 transition-colors duration-200 flex items-center justify-center text-[clamp(0.75rem,1vw,0.85rem)] ${
                     location.pathname === item.href ? "font-bold" : ""
                   }`}
                 >
@@ -201,12 +201,12 @@ export const Navbar: React.FC = () => {
         {/* Social Media Icons - Hidden on small screens */}
         <div className="hidden md:flex justify-center space-x-4"> 
           <Link to="https://www.facebook.com/amoseba.caba">
-            <div className='bg-transparent text-[#E8A598] border-2 rounded-4xl p-2 hover:text-[#EEA987]'>
+            <div className='bg-transparent text-[#F3AA00] border-2 rounded-4xl p-2 hover:text-[#EEA987]'>
               <Facebook size={17} />
             </div>
           </Link>
           <Link to="https://www.instagram.com/amosebapresta/">
-            <div className='bg-transparent text-[#E8A598] border-2 rounded-4xl p-2 hover:text-[#EEA987]'>
+            <div className='bg-transparent text-[#F3AA00] border-2 rounded-4xl p-2 hover:text-[#EEA987]'>
               <Instagram size={17} />
             </div>
           </Link>
@@ -217,12 +217,12 @@ export const Navbar: React.FC = () => {
           {/* Social Icons - Smaller on mobile */}
           <div className="flex space-x-1">
             <Link to="https://www.facebook.com/amoseba.caba">
-              <div className='bg-transparent text-[#E8A598] border-2 rounded-4xl p-1 hover:text-[#EEA987]'>
+              <div className='bg-transparent text-[#F3AA00] border-2 rounded-4xl p-1 hover:text-[#EEA987]'>
                 <Facebook size={14} />
               </div>
             </Link>
             <Link to="https://www.instagram.com/amosebapresta/">
-              <div className='bg-transparent text-[#E8A598] border-2 rounded-4xl p-1 hover:text-[#EEA987]'>
+              <div className='bg-transparent text-[#F3AA00] border-2 rounded-4xl p-1 hover:text-[#EEA987]'>
                 <Instagram size={14} />
               </div>
             </Link>

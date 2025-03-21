@@ -321,6 +321,54 @@ import lentes from '../assets/lentes.png';
 import billetes from '../assets/billetes.png';
 
 // EnhancedButton component
+const EnhancedButton2 = () => {
+  return (
+    <motion.a
+      href="https://amosebaplus.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        delay: 0.8,
+        duration: 0.6,
+        ease: [0.175, 0.885, 0.32, 1.275],
+      }}
+      whileHover={{
+        scale: 1.05,
+        boxShadow: "0px 8px 30px rgba(16, 185, 129, 0.3)",
+      }}
+      whileTap={{ scale: 0.95 }}
+      className="group flex items-center justify-center mt-10 gap-2 
+        bg-[#F3AA00]
+        px-6 py-4 rounded-2xl
+        text-base sm:text-xl font-bold text-white 
+        shadow-[0_4px_20px_rgba(238,169,135,0.25)]
+        transition-all duration-300
+        overflow-hidden
+        md:static z-0
+        hover:from-[#F3AA00] hover:to-[#e6b74a]"
+    >
+      {/* Animated background shine effect */}
+      <div
+        className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent 
+        translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000"
+      />
+
+      {/* Text container */}
+      <div className="flex items-center gap-3">
+        <span className="relative">
+          Beneficios <i>plus</i>
+          <span
+            className="absolute -bottom-1 left-0 w-full h-0.5 bg-white/40 
+            scale-x-0 group-hover:scale-x-100 transition-transform duration-300"
+          />
+        </span>
+      </div>
+    </motion.a>
+  );
+};
+
 const EnhancedButton = () => {
   return (
     <motion.a
@@ -340,14 +388,14 @@ const EnhancedButton = () => {
       }}
       whileTap={{ scale: 0.95 }}
       className="group flex items-center justify-center mt-10 gap-2 
-        bg-[#E8A598]
+        bg-[#F3AA00]
         px-6 py-4 rounded-2xl
         text-base sm:text-xl font-bold text-white 
         shadow-[0_4px_20px_rgba(238,169,135,0.25)]
         transition-all duration-300
         overflow-hidden
         md:static z-0
-        hover:from-[#A39F73] hover:to-[#EEA987]"
+        hover:from-[#F3AA00] hover:to-[#e6b74a]"
     >
       {/* Animated background shine effect */}
       <div
@@ -459,7 +507,7 @@ const Banner2 = () => {
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.6 }}
-            className="text-4xl xs:text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-montserrat font-bold text-white mb-6 text-center"
+            className="text-3xl xs:text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-montserrat font-bold text-white mb-4 text-center"
           >
             BENEFICIOS <br />
             <span className="font-light italic  ">plus</span>
@@ -469,10 +517,12 @@ const Banner2 = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 0.6 }}
-            className="text-white text-center font-medium mb-8"
+            className="text-white text-center font-medium"
           >
-            ¡Y CONTÁS CON ESTOS <br /> Y MUCHOS MÁS BENEFICIOS!
+            ¡Y CONTÁS CON ESTOS  Y MUCHOS MÁS BENEFICIOS!
           </motion.p>
+
+        <EnhancedButton2/>
         </motion.div>
 
         {/* Imágenes */}
