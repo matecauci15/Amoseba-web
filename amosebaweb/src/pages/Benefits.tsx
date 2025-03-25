@@ -12,7 +12,7 @@ import legal from '../assets/legal.png';
 interface Benefit {
   title: string;
   description: string | string[];
-  icon: React.ReactNode;  // Change JSX.Element to React.ReactNode
+  icon: React.ReactNode;  
   image: string;
 }
 
@@ -58,9 +58,14 @@ Farmacias de turno dentro de la República Argentina.`,
 
   return (
     <div className="p-6 md:pl-26 md:pr-26 sm:p-10 bg-gradient-to-b from-[#CAC792] to-gray-50 mt-28 ">
-      <h1 className="text-5xl font-montserrat font-black mb-8 text-white text-center ">
+      <div>
+
+      <h1 className="text-5xl font-montserrat font-black mb-4 text-white text-center ">
         Nuestros Beneficios
       </h1>
+      <div className="w-24 h-1 bg-[#F3AA00] mx-auto rounded-full mb-12"></div>
+
+      </div>
 
       {/* Grid de Beneficios */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-20 ">

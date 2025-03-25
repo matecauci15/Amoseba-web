@@ -169,7 +169,7 @@ const Services: React.FC = () => {
           <h2 className="text-5xl font-montserrat font-black text-white mb-4">
             Nuestros Servicios
           </h2>
-          <div className="w-24 h-1 bg-[#E8A598] mx-auto rounded-full mb-6"></div>
+          <div className="w-24 h-1 bg-[#F3AA00] mx-auto rounded-full mb-6"></div>
           <p className="text-white text-lg opacity-90">
             En AMOSEBA ofrecemos soluciones en turismo y préstamos para mejorar tu bienestar.
           </p>

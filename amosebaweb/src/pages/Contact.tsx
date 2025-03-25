@@ -223,16 +223,10 @@ export const Contact: React.FC = () => {
       <div className="max-w-6xl mx-auto px-6">
         {/* Section Title */}
         <div className="text-center mb-16 max-w-xl mx-auto">
-          {/* <span className="bg-white px-4 py-1 rounded-full text-[#CAC792] text-sm font-semibold shadow-md">
-            ¿Tienes alguna pregunta?
-          </span> */}
-          <h1 className="text-5xl font-montserrat font-black text-white mb-4 mt-4">
+          <h1 className="text-5xl font-montserrat font-black text-white mb-4">
             Contáctanos
           </h1>
-          <div className="w-24 h-1 bg-[#E8A598] mx-auto rounded-full mb-6"></div>
-          {/* <p className="text-white text-lg opacity-90">
-            Estamos para ayudarte.
-          </p> */}
+          <div className="w-24 h-1 bg-[#F3AA00] mx-auto rounded-full mb-6"></div>
         </div>
 
         {/* Contact Info + Form */}
@@ -438,7 +432,7 @@ export const Contact: React.FC = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full bg-[#E8A598] text-white py-3 px-6 rounded-lg font-semibold transform transition-all duration-300 hover:bg-[#D08A85] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#A39F73] active:scale-95 flex items-center justify-center disabled:opacity-70"
+                  className="w-full bg-[#F3AA00] text-white py-3 px-6 rounded-lg font-semibold transform transition-all duration-300 hover:bg-[#D08A85] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#A39F73] active:scale-95 flex items-center justify-center disabled:opacity-70"
                 >
                   {loading ? (
                     <>

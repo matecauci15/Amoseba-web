@@ -20,12 +20,13 @@ export const About = () => {
   }, []);
 
   return (
-      <div className="min-h-screen bg-gradient-to-b from-[#CAC792] mt-18 to-gray-50 py-16">
+      <div className="min-h-screen bg-gradient-to-b from-[#CAC792] mt-22 to-gray-50 py-16">
     <div className="max-w-7xl mx-auto px-4">
         <div className={`transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-          <h1 className="text-5xl font-montserrat font-black text-white text-center mb-10">
+          <h1 className="text-5xl font-montserrat font-black text-white text-center mb-4">
             Sobre Nosotros
           </h1>
+          <div className="w-24 h-1 bg-[#F3AA00] mx-auto rounded-full mb-6"></div>
           
           <AboutCards />
 

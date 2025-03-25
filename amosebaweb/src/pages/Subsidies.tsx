@@ -68,13 +68,12 @@ export const Subsidies: React.FC = () => {
     <div className="min-h-screen  bg-gradient-to-b from-[#CAC792] to-gray-50 py-16 px-4 mt-19">
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
-        <div className="text-center mb-16">
-          {/* <div className="inline-flex items-center justify-center p-2 bg-[#A39F73]/10 rounded-full mb-6">
-            <Info className="text-[#A39F73]" />
-          </div> */}
+        <div className="text-center mb-14 mt-3">
           <h1 className="text-5xl md:text-5xl font-montserrat font-black text-white mb-4">
             Subsidios para nuestros socios
           </h1>
+          <div className="w-24 h-1 bg-[#F3AA00] mx-auto rounded-full mb-6"></div>
+
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Comprometidos con tu bienestar en cada etapa de la vida
           </p>
