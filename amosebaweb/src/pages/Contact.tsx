@@ -255,14 +255,14 @@ export const Contact: React.FC = () => {
                 icon={<Phone className="h-5 w-5 text-white" />} 
                 title="Teléfono"
               >
-                <p className="text-gray-600">+54 11 1234-5678</p>
+                <p className="text-gray-600">+54 (11) 3023 06</p>
               </ContactCard>
               
               <ContactCard 
                 icon={<Mail className="h-5 w-5 text-white" />} 
                 title="Correo Electrónico"
               >
-                <p className="text-gray-600">contacto@tuempresa.com</p>
+                <p className="text-gray-600">info@amoseba.com.ar</p>
               </ContactCard>
 
               {/* <ContactCard 
