@@ -255,7 +255,7 @@ export const Contact: React.FC = () => {
                 icon={<Phone className="h-5 w-5 text-white" />} 
                 title="Teléfono"
               >
-                <p className="text-gray-600">+54 (11) 3023 06</p>
+                <p className="text-gray-600">+54 (11) 3023 0633</p>
               </ContactCard>
               
               <ContactCard 
@@ -299,7 +299,7 @@ export const Contact: React.FC = () => {
               <div className="flex space-x-4">
                 {/* Social Media Icons */}
                 <a 
-                  href="#" 
+                  href="https://www.instagram.com/amosebapresta/" 
                   className="bg-[#CAC792] hover:bg-[#A39F73] h-10 w-10 rounded-full flex items-center justify-center transition-all duration-300"
                   aria-label="Instagram"
                 >
@@ -317,7 +317,7 @@ export const Contact: React.FC = () => {
                   </svg>
                 </a> */}
                 <a 
-                  href="#" 
+                  href="https://www.facebook.com/amoseba.caba" 
                   className="bg-[#CAC792] hover:bg-[#A39F73] h-10 w-10 rounded-full flex items-center justify-center transition-all duration-300"
                   aria-label="Facebook"
                 >
